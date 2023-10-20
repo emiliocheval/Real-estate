@@ -363,22 +363,41 @@ form label {
   margin-top: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1299px) {
   .content {
-    display: block;
-    margin-right: 20%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: unset;
+  }
+  .cards {
+    padding-left: unset;
+  }
+}
+@media (max-width: 768px) {
+  .banner.main-page {
+    height: unset;
+    min-height: 100vh;
+    overflow: auto;
   }
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
-    margin-left: 50px;
   }
   .card {
     margin: 0;
   }
   .content-text {
     margin: 0;
+  }
+}
+@media (max-width: 525px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .cards .card {
+    display: block;
+    width: unset;
   }
 }
 
