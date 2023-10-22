@@ -439,29 +439,220 @@ $card-margin: 10px 15px;
 		  }
   }
 
+  
 
 
-@media (max-width: 768px) {
-    .content {
-        display: block;
-        margin-right: 20%;
-    }
 
-		.cards {
-		  display: grid;
-		  grid-template-columns: repeat(2, 1fr);
-		  grid-gap: 5px;
-		  margin-left: 50px;
-		}
-	  
-		.card {
-		  margin: 0;
-		}
-		
-		.content-text {
+  @media (max-width: 768px) {
+
+
+.banner.main-page {
+		height: unset;
+		min-height: 100vh;
+		overflow: auto;
+	}
+	.content {
+		text-align: center;
+		padding: 20px;
+	}
+
+	.content-text {
+    	margin: 0;
+
+	}
+
+	.cards {
+		display: grid;
+    	grid-template-columns: repeat(2, 1fr);
+		grid-gap: 5px;
+		margin-left: 120px;
+	}
+
+	.card {
 		margin: 0;
+		
+	}
+
+	
+	.product-info {
+		padding: 40px !important;
+		padding-left: 40px !important;
+	}
+
+  .text-overlay {
+	font-size: 12px;
+  }
+
+  .product-images {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  input,
+  textarea {
+    width: 80% !important;
+  }
+
+  form {
+  color: $color_1;
+  font-size: 16px;
+  font-weight: normal;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  max-width: 100%; 
+
+  
+
+  legend {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  label {
+    margin-top: 20px;
+    display: block;
+  }
+
+  input,
+  textarea {
+    width: 100%; 
+	max-width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  
+}
+
+.team-member {
+	text-align: left;
+}
+.team-member img {
+	width: 100%;
+	max-width: none;
+}
+
+
+}
+
+/* Ändring: Ändrade styling värden på content som krockade med cards */
+@media (max-width: 1299px) {
+
+	.content { 
+		flex-direction: column;
+		justify-content: center;
+		padding-left: unset;
+	} 
+
+	.cards {
+		padding-left: unset;
+		padding-top: 40px;
+	}
+  
+	form {
+	color: $color_1;
+	font-size: 16px;
+	font-weight: normal;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	max-width: 100%; 
+
+	legend {
+	  font-size: 18px;
+	  padding-bottom: 10px;
+	}
+  
+	label {
+	  margin-top: 20px;
+	  display: block;
+	}
+  
+	input,
+	textarea {
+	  width: 100%; 
+	  max-width: 100%;
+	  padding: 10px;
+	  margin-bottom: 15px;
+	  border: 1px solid #ccc;
+	  border-radius: 5px;
+	  width: 80% !important;
+	}
+  	}
+
+	  .text-overlay {
+		font-size: 12px;
 	  }
+  }
+
+  @media (max-width: 525px) {
+
+	.navbar ul {
+		margin-right: 60px;
+	}
+
+
+	.cards {
+		grid-template-columns: 1fr;
+		margin: 0;
+	}
+
+	.cards .card {
+		display: block;
+		width: unset;
+	}
+
+/* Ändrade padding för bättre width i 525px */
+	.product-info {
+		padding: 30px !important;
+		padding-left: 30px !important;
+	}
+
+	.text-overlay {
+		font-size:xx-small
 	  }
+  
+	input,
+	textarea {
+	  width: 80% !important;
+	}
+  
+	form {
+	color: $color_1;
+	font-size: 16px;
+	font-weight: normal;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	max-width: 100%; 
+  
+	
+  
+	legend {
+	  font-size: 18px;
+	  padding-bottom: 10px;
+	}
+  
+	label {
+	  margin-top: 20px;
+	  display: block;
+	}
+  
+	input,
+	textarea {
+	  width: 100%; 
+	  max-width: 100%;
+	  padding: 10px;
+	  margin-bottom: 15px;
+	  border: 1px solid #ccc;
+	  border-radius: 5px;
+	}
+	
+  }
+  }
+
+  
+
+  
+
+	  
 	  
 	  
 	  
